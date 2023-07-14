@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: small;
+}
+
+body {
+    background-color: white;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    height: 60px;
+    /* background-color: teal; */
+    padding: 0 18px;
+}
+
+header .options {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* background-color: indigo; */
+}
+
+header .options a {
+    text-decoration: none;
+    color: black;
+}
+
+header .options a img {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.apps-logo {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url(appsgoogle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.search-logo {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(searchgoogle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.sr-1{
+    color: blue;
+    font-size: small;
+    display: inline-block;
+    position: relative;
+}
+
+.micro-logo {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(microgoogle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.camera-logo {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(cameragoogle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    height: calc(100% - 60px - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    /* background-color: indigo; */
+}
+main .container figure{
+    height: 92px;
+}
+main .container figure img {
+    height: 100%;
+}
+main .container .searcher {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    height: 40px;
+    width: 450px;
+    padding: 8px 12px;
+    border: 1px solid gray;
+    border-radius: 24px;
+}
+main .container .searcher button {
+    border: none;
+    background-color: transparent;
+}
+main .container .searcher input {
+    width: 100%;
+    border: none;
+    color: #f8f9fa;
+    background-color: transparent;
+}
+main .container .searcher-buttons {
+    display: flex;
+    gap: 10px;
+}
+main .container .searcher-buttons button{
+    border: none;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    padding: 12px;
+    color: black;
+}
+
+
+main .container p {
+    font-size: small;
+    color: black;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    background-color: #f8f9fa;
+}
+footer section {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757a;
+}
+footer section.more-info {
+    border-top: gray solid 1px;
+    display: flex;
+    justify-content: space-between;
+}
+footer section.more-info div {
+    display: flex;
+    gap: 18px;
+}
+footer section.more-info div a {
+    color: #70757a;
+    text-decoration: none;
+}
